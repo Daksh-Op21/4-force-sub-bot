@@ -111,13 +111,14 @@ class Bot(Client):
         self.set_parse_mode(ParseMode.HTML)
         self.LOGGER(__name__).info(
             f"Bot Running..!\n\nCreated by \n@iTz_Anayokoji")
-        self.LOGGER(__name__).info(f""" █████╗ ███╗   ██╗██╗███████╗██╗  ██╗██╗███╗   ██╗
+        self.LOGGER(__name__).info(f""" \n\n
+        
+ █████╗ ███╗   ██╗██╗███████╗██╗  ██╗██╗███╗   ██╗
 ██╔══██╗████╗  ██║██║██╔════╝██║  ██║██║████╗  ██║
 ███████║██╔██╗ ██║██║███████╗███████║██║██╔██╗ ██║
 ██╔══██║██║╚██╗██║██║╚════██║██╔══██║██║██║╚██╗██║
 ██║  ██║██║ ╚████║██║███████║██║  ██║██║██║ ╚████║
-╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝
-                                                  """)
+╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝                  """)
         self.username = usr_bot_me.username
         # web-response
         app = web.AppRunner(await web_server())
