@@ -3,13 +3,13 @@ import re
 import asyncio
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
-from config import FORCE_SUB_CHANNEL1, FORCE_SUB_CHANNEL2, ADMINS
+from config import FORCE_SUB_CHANNEL1, FORCE_SUB_CHANNEL2, FORCE_SUB_CHANNEL3, FORCE_SUB_CHANNEL4, ADMINS
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 from pyrogram.errors import FloodWait
 
 
 async def is_subscribed(filter, client, update):
-    if not (FORCE_SUB_CHANNEL1 or FORCE_SUB_CHANNEL2):
+    if not (FORCE_SUB_CHANNEL1 or FORCE_SUB_CHANNEL2 or FORCE_SUB_CHANNEL3 or FORCE_SUB_CHANNEL4):
         return True
 
     user_id = update.from_user.id
