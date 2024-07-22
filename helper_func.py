@@ -19,7 +19,7 @@ async def is_subscribed(filter, client, update):
 
     member_status = ChatMemberStatus.OWNER, ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.MEMBER
 
-    for channel_id in [FORCE_SUB_CHANNEL1, FORCE_SUB_CHANNEL2]:
+    for channel_id in [FORCE_SUB_CHANNEL1, FORCE_SUB_CHANNEL2, FORCE_SUB_CHANNEL3, FORCE_SUB_CHANNEL4]:
         if not channel_id:
             continue
 
